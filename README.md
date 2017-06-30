@@ -72,7 +72,7 @@ Set environment variable RUBYOPT=-Eutf-8.
 **true** |false
 
 
-To install a specific version of ruby on Windows and override the maintainers checksum:
+Installation with all the paramters and its defaults:
 
 ```puppet
   class {ruby:
