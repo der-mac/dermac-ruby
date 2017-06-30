@@ -28,8 +28,7 @@ The ruby-module uses the chocolatey-chocolatey module
 for a simple ruby-installation use:
 
 ```puppet
-    class { "ruby" :
-    }
+    class { ruby: }
 ```
 
 ##### `package_ensure`
@@ -75,15 +74,15 @@ Set environment variable RUBYOPT=-Eutf-8.
 Installation with all the paramters and its defaults:
 
 ```puppet
-  class {ruby:
-    package_ensure       => latest
-    prerelease           => false
-    checksum             => false
-    installpath          => 'C:\tools\ruby24',
-    $addtk               => true
-    $assocfiles          => true
-    $modpath             => true
-    $defaultutf8         => true
+  class { ruby:
+    package_ensure => latest,
+    prerelease     => false,
+    checksum       => false,
+    installpath    => 'C:\tools\ruby24',
+    addtk          => true,
+    assocfiles     => true,
+    modpath        => true,
+    defaultutf8    => true,
   }
 ```
 
